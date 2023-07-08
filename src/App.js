@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import React, {useState} from "react";
 import './App.css';
 
 function App() {
+  const [email, SetEmail] = useState('');
+  const [password, Setpassword] = useState('');
+  
+  function teste(){
+   
+    var json = {
+      "email": email,
+      "password": password
+    }
+    console.log(json);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <h1 className='title'>Login</h1>
+      <div className='forms'>
+      <input type="text" placeholder='Digite seu login' value={email} onChange={(e)=> SetEmail(e.target.value)}/>
+      </div>
+      <div className='forms'>
+      <input type="password" placeholder='Digite sua senha' value={password} onChange={(e)=> Setpassword(e.target.value)}/>
+      </div>
+      <button className='btn' onClick={teste}>Entrar</button>
     </div>
+ 
   );
 }
 
