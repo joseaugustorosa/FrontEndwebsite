@@ -8,6 +8,7 @@ body{
   background-color: white;
   padding: 15px 0 0 20px;
   border-radius: 20px;
+  padding-bottom: 20px;
  
 }
 .title{
@@ -31,9 +32,15 @@ body{
   border: 1px solid white;
   background-color:green ;
   color: white;
-  margin-bottom: 20px;
-
 }
 .btn:hover{
   background-color: rgb(0, 214, 0);
+}
+.secondBtn{
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color:white ;
+  color: black;
 }

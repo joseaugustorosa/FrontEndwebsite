@@ -1,0 +1,27 @@
+
+
+.o{
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    margin-right: 20px;
+    margin-top: -10px;
+}
+/* .person{
+    
+    text-align: center;
+    
+    height: 100px;
+}
+.name{
+    display: inline-block;
+}*/
+.icon{
+   margin-left: 10px;
+   margin-right: 20px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    display: inline-block;
+} 
